@@ -4,154 +4,157 @@
 <meta charset="UTF-8">
 <title>Emilee’s Paw Printz</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-h1 {
-  font-size: 42px;
-  margin-top: 20px;
-}
+<head>
+  <meta charset="UTF-8">
+  <title>Emilee’s Paw Printz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.tagline {
-  font-size: 22px;
-  margin-bottom: 20px;
-  color: #7a6c65;
-}
+  <style>
+    h1 {
+      font-size: 42px;
+      margin-top: 20px;
+    }
 
-.cta-button {
-  display: inline-block;
-  background-color: #7a4c45;
-  color: white;
-  padding: 14px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 18px;
-  margin-top: 10px;
-}
+    .tagline {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #7a6c65;
+    }
 
-.cta-button:hover {
-  background-color: #5f3a34;
-}
+    .cta-button {
+      display: inline-block;
+      background-color: #7a4c45;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 10px;
+    }
 
-body {
-  margin: 0;
-  font-family: Georgia, serif;
-  background: #f7f4f2;
-  color: #3f302b;
-  text-align: center;
-}
+    .cta-button:hover {
+      background-color: #5f3a34;
+    }
 
-.promo-image {
-  margin: 0 auto 30px;
-}
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f7f4f2;
+      color: #3f302b;
+      text-align: center;
+    }
 
+    .promo-image {
+      margin: 0 auto 30px;
+    }
 
+    .hero {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
 
-.hero {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 30px 20px;
-}
+    .hero p {
+      font-size: 30px;
+      line-height: 1.4;
+      margin: 10px 0;
+    }
 
+    nav {
+      padding: 24px 10px 30px;
+      font-size: 28px;
+    }
 
-.hero p {
-  font-size:30px;
-  line-height:1.4;
-  margin:10px 0;
-}
+    nav a {
+      display: inline-block;
+      margin: 0 12px;
+      font-size: 22px;
+      text-decoration: none;
+      color: #7a4c45;
+    }
 
-nav {
-  padding:24px 10px 30px;
-  font-size:28px;
-}
+    section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      font-size: 28px;
+      line-height: 1.6;
+    }
 
-nav a {
-  display: inline-block;
-  margin: 0 12px;
-  font-size: 22px;
-  text-decoration: none;
-  color: #7a4c45;
-}
+    section h2 {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
 
-section {
-  max-width:700px;
-  margin:0 auto;
-  padding:40px 24px;
-  font-size:28px;
-  line-height:1.6;
-}
+    section p {
+      font-size: 22px;
+      line-height: 1.6;
+      margin: 12px auto;
+      max-width: 620px;
+    }
 
-section h2 {
-  font-size:48px;
-  margin-bottom:16px;
-}
+    .services-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto 0;
+      max-width: 620px;
+      text-align: left;
+    }
 
-section p {
-  font-size: 22px;
-  line-height: 1.6;
-  margin: 12px auto;
-  max-width: 620px;
-}
+    .services-list li {
+      position: relative;
+      padding-left: 28px;
+      margin: 16px 0;
+      font-size: 28px;
+      line-height: 1.6;
+    }
 
-.services-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px auto 0;
-  max-width: 620px;
-  text-align: left;
-}
+    .services-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #d8b4a6;
+      font-size: 24px;
+    }
 
-.services-list li {
-  position: relative;
-  padding-left: 28px;
-  margin: 16px 0;
-  font-size: 28px;
-  line-height: 1.6;
-}
-  
+    .cta {
+      max-width: 700px;
+      margin: 20px auto 40px;
+      background: #d8b4a6;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-.services-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #d8b4a6;
-  font-size: 24px;
-}
+    .cta h2 {
+      font-size: 38px;
+      margin: 0 0 12px;
+    }
 
-.cta {
-  max-width: 700px;
-  margin: 20px auto 40px;
-  background: #d8b4a6;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
+    .cta p {
+      font-size: 22px;
+      line-height: 1.5;
+      margin: 10px 0;
+    }
 
-.cta h2 {
-  font-size: 38px;
-  margin: 0 0 12px;
-}
+    .cta a {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 12px 22px;
+      background: white;
+      color: #d8b4a6;
+      text-decoration: none;
+      font-size: 20px;
+    }
 
-.cta p {
-  font-size: 22px;
-  line-height: 1.5;
-  margin: 10px 0;
-}
-
-.cta a {
-  display: inline-block;
-  margin-top: 14px;
-  padding: 12px 22px;
-  background: white;
-  color: #d8b4a6;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-footer {
-  padding: 24px 20px 40px;
-  text-align: center;
-  font-size: 16px;
-}
-</style>
+    footer {
+      padding: 24px 20px 40px;
+      text-align: center;
+      font-size: 16px;
+    }
+  </style>
+</head>
 <body>
 <div class="promo-image">
   <img src="IMG_7478.jpeg" style="max-width: 500px; width: 90%; height: auto; display: block; margin: 30px auto; border-radius: 12px;">
