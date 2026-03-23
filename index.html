@@ -239,14 +239,17 @@
 <script>
   const faders = document.querySelectorAll('.fade-in');
 
-  window.addEventListener('scroll', () => {
+  function showOnScroll() {
     faders.forEach(el => {
       const rect = el.getBoundingClientRect();
       if (rect.top < window.innerHeight - 50) {
         el.classList.add('show');
       }
     });
-  });
+  }
+
+  window.addEventListener('scroll', showOnScroll);
+  window.addEventListener('load', showOnScroll);
 </script>
 </body>
 </html>
