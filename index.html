@@ -62,8 +62,20 @@
   min-height: 60vh;
   margin: 0;
   padding: 40px 20px;
-  background: linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
-              url('IMG_8188.jpeg') center 18% / cover no-repeat;
+  background-image: url('IMG_8188.jpeg');
+  background-size: cover;
+  background-position: center 18%;
+  background-repeat: no-repeat;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.35);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
 .hero img {
   width: 180px;
@@ -192,7 +204,8 @@ section:not(.hero) {
 .cta a:hover {
   transform: translateY(-3px);
   box-shadow: 0 18px 35px rgba(122, 76, 69, 0.35);
- .hero {
+}
+  .hero {
   position: relative;
   width: 100%;
   min-height: 60vh;
@@ -205,7 +218,7 @@ section:not(.hero) {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.35);
+  background-color: rgba(255,255,255,0.35);
 }
 .hero-content {
   position: relative;
