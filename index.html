@@ -194,9 +194,10 @@ section:not(.hero) {
   box-shadow: 0 18px 35px rgba(122, 76, 69, 0.35);
 }
 .hero {
-  position: relative;
   width: 100%;
-  min-height: 70vh;
+  padding: 60px 20px 30px;
+  text-align: center;
+  background: linear-gradient(to bottom, #f7f3ef, #ffffff);
 }
   
 .hero-img {
@@ -206,15 +207,14 @@ section:not(.hero) {
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   z-index: 2;
   text-align: center;
-  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .hero h1 {
