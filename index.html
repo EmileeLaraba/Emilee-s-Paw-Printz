@@ -205,24 +205,28 @@ section:not(.hero) {
   transform: translateY(-3px);
   box-shadow: 0 18px 35px rgba(122, 76, 69, 0.35);
 }
-  .hero {
+.hero {
   position: relative;
   width: 100%;
-  min-height: 55vh;
-  background-image: url('IMG_8188.jpeg');
-  background-size: contain;
-  background-position: center 45%;
-  background-repeat: no-repeat;
+  min-height: 70vh;
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(255,255,255,0.35);
+  
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 .hero-content {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
+  text-align: center;
+  width: 100%;
 }
 
 .hero h1 {
@@ -260,6 +264,9 @@ section:not(.hero) {
 </head>
 <body>
   <section class="hero">
+
+    <img src="IMG_8188.jpeg" class="hero-img">
+
   <div class="hero-content">
     <h1>Custom Pet Memorials</h1>
     <p>Handmade with love to keep your pet close forever</p>
