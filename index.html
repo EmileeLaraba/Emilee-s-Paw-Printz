@@ -95,9 +95,19 @@ html {
 }
 
     nav {
-      padding: 24px 10px 30px;
-      font-size: 28px;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f9f6f2;
+  z-index: 1000;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+      
 
     nav a {
       display: inline-block;
@@ -186,6 +196,7 @@ img {
 
 html, body {
   overflow-x: hidden;
+  padding-top: 70px;
 }
 
 .product-card {
