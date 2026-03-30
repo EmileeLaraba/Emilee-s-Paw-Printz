@@ -86,24 +86,6 @@
   margin-bottom: 15px;
 }
 
-
-.cta a {
-  display: inline-block;
-  padding: 16px 34px;
-  border-radius: 14px;
-  font-weight: 600;
-  font-size: 18px;
-  text-decoration: none;
-  color: #ffffff;
-  background: linear-gradient(135deg, #7a4a3a, #5a3a2e);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
-  transition: all 0.25s ease;
-}
-
-.cta a:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.22);
-}
     nav {
       padding: 24px 10px 30px;
       font-size: 28px;
@@ -125,6 +107,10 @@
 }
 
 section:not(.hero) {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.showcase {
   max-width: 760px;
   margin: 0 auto;
 }
@@ -173,6 +159,24 @@ section:not(.hero) {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 14px;
+  border-radius: 12px;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .product-card {
@@ -302,8 +306,6 @@ section:not(.hero) {
   </div>
 </section>
 
-<div class="hero-divider"></div>
-
 <div style="text-align:center; padding: 20px 20px; max-width: 700px; margin: 0 auto;">
   
   <a href="mailto:emileespawprintz@gmail.com"
@@ -398,6 +400,7 @@ section:not(.hero) {
 <p style="font-size: 15px; color: #5a3a32; margin-top: 10px;">
   I'll respond within 24 hours to get started
 </p>
+</section>
 
 <section id="contact">
 <h2>Contact</h2>
