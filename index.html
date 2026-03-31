@@ -154,6 +154,21 @@ html {
   text-align: center;
 }
 
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Desktop upgrade */
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .product-card {
   background: #ffffff;
   border-radius: 16px;
