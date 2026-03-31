@@ -430,13 +430,19 @@ nav a {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  box-shadow: 0 8px 20px rgba(122, 74, 58, 0.25);
+  box-shadow: 0 10px 25px rgba(122, 74, 58, 0.3);
   transition: all 0.3s ease;
 }
 
+/* Hover (desktop) */
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(122, 74, 58, 0.35);
+  box-shadow: 0 14px 30px rgba(122, 74, 58, 0.4);
+}
+
+/* Tap (iPhone) */
+.cta-button:active {
+  transform: scale(0.97);
 }
 
 .cta-button:active {
