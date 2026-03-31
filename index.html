@@ -162,19 +162,27 @@ html {
   margin: 0 auto;
 }
 
-/* Desktop upgrade */
-@media (min-width: 768px) {
-  .product-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .product-card {
   background: #ffffff;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   margin-bottom: 20px;
+
+  /* animation */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* Desktop upgrade */
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 nav {
