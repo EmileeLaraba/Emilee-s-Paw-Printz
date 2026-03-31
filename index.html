@@ -419,6 +419,37 @@ nav a {
   font-size: 35px;
   cursor: pointer;
 }
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #7a4a3a, #9c6b5a);
+  color: white;
+  padding: 16px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(122, 74, 58, 0.25);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(122, 74, 58, 0.35);
+}
+
+.cta-button:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 600px) {
+  .cta-button {
+    font-size: 20px;
+    padding: 18px 32px;
+  }
+}
+
   </style>
 </head>
 
@@ -436,7 +467,9 @@ nav a {
 
 <div style="text-align:center; padding: 20px 20px; max-width: 700px; margin: 0 auto;">
 
-  <a href="mailto:emileespawprintz@gmail.com" style="background: #7a4a3a; color: white; padding: 16px 30px; border-radius: 14px; text-decoration: none; font-size: 18px; display: inline-block;">Start Your Memorial</a>
+  <a href="mailto:emileespawprintz@gmail.com" class="cta-button">
+  Start Your Memorial
+</a>
 
 </div>
 
