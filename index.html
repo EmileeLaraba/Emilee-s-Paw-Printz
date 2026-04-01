@@ -618,6 +618,42 @@ nav a {
   align-items: center;
 }
 
+.how-it-works {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto 0;
+}
+
+.step {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.step h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.step p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
   </style>
 </head>
 
