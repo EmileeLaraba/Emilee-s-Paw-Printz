@@ -58,8 +58,48 @@ We built this together 💪
 }
 
 .storm-section {
-  padding: 40px 20px;
+  padding: 70px 20px;
   text-align: center;
+  background: #f3efe7;
+}
+
+.storm-section h2 {
+  color: #d98263;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.storm-section p {
+  color: #5f5550;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 850px;
+  margin: 0 auto 40px;
+}
+
+.storm-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0 20px;
+}
+
+.storm-card {
+  flex: 0 0 auto;
+  width: 260px;
+  background: #f8f6f1;
+  border-radius: 24px;
+  padding: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.storm-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
 }
 
 .storm-img {
@@ -704,24 +744,26 @@ nav a {
   </a>
 </p>
 
-<section class="storm-section" style="padding: 40px 20px; background-color: #fdf8f0; border-radius: 16px; text-align: center; max-width: 820px; margin: 30px auto; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
-  <h2 style="color: #d97757; font-size: 1.65em; margin-bottom: 12px;">Meet Storm – Our Chief Paw Officer 🐾</h2>
-  <p style="max-width: 620px; margin: 0 auto 25px; line-height: 1.55; color: #555;">Storm is the heart and joy behind Emilee's Paw Printz. He keeps Emilee company while she handcrafts every memorial with love and care.</p>
-  
-  <!-- Improved Storm Photo Reel -->
-  <div style="display: flex; overflow-x: auto; gap: 18px; padding: 12px 0; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; scrollbar-width: thin;">
-    
-    <img src="storm-running.jpeg" alt="Storm the Chief Paw Officer" style="width: 300px; flex-shrink: 0; border-radius: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); scroll-snap-align: center;">
-    <img src="storm-rock.jpeg" alt="Storm the Chief Paw Officer" style="width: 300px; flex-shrink: 0; border-radius: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); scroll-snap-align: center;">
-    <img src="storm-easter.jpeg" alt="Storm the Chief Paw Officer" style="width: 300px; flex-shrink: 0; border-radius: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); scroll-snap-align: center;">
-    <img src="storm-studio.jpeg" alt="Storm the Chief Paw Officer" style="width: 300px; flex-shrink: 0; border-radius: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); scroll-snap-align: center;">
-    <img src="storm-couch" alt="Storm the Chief Paw Officer" style="width: 300px; flex-shrink: 0; border-radius: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); scroll-snap-align: center;">
-    <img src="storm-patio.jpeg" alt="Storm the Chief Paw Officer" style="width: 300px; flex-shrink: 0; border-radius: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); scroll-snap-align: center;">
-    <img src="stormfacetimeing.jpeg" alt="Storm the Chief Paw Officer" style="width: 300px; flex-shrink: 0; border-radius: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); scroll-snap-align: center;">
-    <img src="storm-window.jpeg" alt="Storm the Chief Paw Officer" style="width: 300px; flex-shrink: 0; border-radius: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); scroll-snap-align: center;">
+<section class="storm-section">
+  <h2>Meet Storm –<br>Our Chief Paw Officer 🐾</h2>
+  <p>
+    Storm is the heart and joy behind Emilee's Paw Printz. He keeps Emilee company
+    while she handcrafts every memorial with love and care.
+  </p>
+
+  <div class="storm-scroll">
+    <div class="storm-card">
+      <img src="assets/images/storm/storm-facetime.jpeg" alt="Storm on FaceTime">
+    </div>
+
+    <div class="storm-card">
+      <img src="assets/images/storm/storm-looking-out-window.jpeg" alt="Storm looking out the window">
+    </div>
+
+    <div class="storm-card">
+      <img src="assets/images/storm/storm-running.jpeg" alt="Storm running">
+    </div>
   </div>
-  
-  <p style="margin-top: 20px; font-size: 1em; color: #666;">Swipe left or right to see more of Storm! 🐾</p>
 </section>
 
 <nav>
