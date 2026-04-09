@@ -694,18 +694,67 @@ nav a {
   }
 }
 
+.hero {
+  height: 90vh;
+  background: url('assets/images/hero-hearts.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(3px);
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #4a3f3f;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #6b5e5e;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  background: #a8745b;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #8e5f49;
+}
   </style>
 </head>
 
 
 
 <body>
-  <section class="hero" id="home">
-    
-
-  <div class="hero-content">
+  <section class="hero">
+  <div class="hero-overlay">
     <h1>Keep Their Memory Close, Always 🐾</h1>
-<p>A meaningful way to honor the love you'll never forget.</p>
+    <p>Turn your pet's ashes into a beautiful piece you can hold forever.</p>
+    <a href="#products" class="hero-btn">Start Your Memorial</a>
   </div>
 </section>
 
