@@ -441,8 +441,11 @@ html, body {
 }
 
 .hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 34px;
+  line-height: 1.08;
+  color: #4a3f3f;
+  margin-bottom: 14px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .hero p {
@@ -695,12 +698,8 @@ nav a {
 }
 
 .hero {
-  height: 90vh;
-  background-image: url("assets/images/EAFF321E-D44A-4C36-8593-2E664C6FD8F2.png");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  min-height: 68vh;
+  background: url('assets/images/EAFF321E-D44A-4C36-8593-2E664C6FD8F2.png') center/cover no-repeat;
   position: relative;
 }
 
@@ -708,8 +707,7 @@ nav a {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .hero-overlay {
