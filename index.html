@@ -153,7 +153,11 @@ html {
    .hero {
   text-align: center;
   padding: 120px 20px 70px;
-  background: linear-gradient(to bottom, #fdfaf7, #f7f1eb);
+
+  background-image: url("assets/images/assets:images:hero.jpg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -162,6 +166,17 @@ html {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s ease forwards;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.65);
 }
 
 @keyframes fadeUp {
